@@ -36,7 +36,6 @@ class ATM:
 
 class Bank:
     def __init__(self):
-        # Dictionary untuk menyimpan data pengguna: username sebagai key dan ATM sebagai value
         self.pengguna = {}
 
     def registrasi(self, username, password):
@@ -54,10 +53,8 @@ class Bank:
             print("Login gagal! Username atau password salah.")
             return None
 
-# Membuat sistem bank yang mengelola banyak akun pengguna
 bank = Bank()
 
-# Fungsi untuk interaksi dengan pengguna
 def mulai():
     while True:
         print("\n=== Selamat Datang di ATM ===")
